@@ -9,6 +9,20 @@ base {
 	archivesName = project.archives_base_name
 }
 
+sourceSets {
+	main {
+		java {
+			srcDirs = ['.']
+			include '**/*.java'
+			exclude 'build/**', '.gradle/**', '.github/**'
+		}
+		resources {
+			srcDirs = ['.']
+			include 'fabric.mod.json', 'dispenserduel.mixins.json'
+		}
+	}
+}
+
 repositories {
 }
 
