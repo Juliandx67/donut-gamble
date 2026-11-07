@@ -1,0 +1,9 @@
+{
+  "required": true,
+  "package": "dispenserduel.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "ItemModelManagerMixin",
+    "ItemStackMixin"
+  ]
+}

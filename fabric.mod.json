@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "dispenserduel",
+  "version": "1.0.0",
+  "name": "Dispenser Duel",
+  "description": "Client-seitige Anzeige: Taste druecken, und die Items sehen bis zum Zurueckstecken wie die Gewinner-/Verlierer-Stufe aus.",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "dispenserduel.DispenserDuelClient"
+    ]
+  },
+  "mixins": [
+    {
+      "config": "dispenserduel.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
